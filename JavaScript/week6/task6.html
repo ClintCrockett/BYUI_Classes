@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSE 121b: Week 05 | Sample Solution</title>
+    <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <nav>
+        <ul id="menu">
+            <li><a id="toggleMenu">&equiv;</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Lesson 2</a></li>
+            <li><a href="#">Lesson 3</a></li>
+            <li><a href="#">Lesson 4</a></li>
+            <li><a href="#" class="active">Lesson 5</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Yahtzee Game Board</h1>
+    </header>
+    <main>
+        <section>
+            <article>
+                <div>
+                    <label for="addend1">Dice of 1s:</label>
+                    <input type="text" id="addend1" name="addend1">
+                </div>
+                <div>
+                    <label for="addend2">Dice of 2s:</label>
+                    <input type="text" id="addend2" name="addend2">
+                </div>
+                <div>
+                    <label for="addend3">Dice of 3s:</label>
+                    <input type="text" id="addend3" name="addend3">
+                </div>
+                <div>
+                    <label for="addend4">Dice of 4s:</label>
+                    <input type="text" id="addend4" name="addend4">
+                </div>
+                <div>
+                    <label for="addend5">Dice of 5s:</label>
+                    <input type="text" id="addend5" name="addend5">
+                </div>
+                <div>
+                    <label for="addend6">Dice of 6s:</label>
+                    <input type="text" id="addend6" name="addend6">
+                </div>
+                <div>
+                    <label for="sum">Sum:</label>
+                    <input type="text" id="sum" name="sum" disabled>
+                </div>
+                <div>
+                    <lable>Bonus 35: (Score 65)</lable>
+                </div>
+                <div>
+                    <label for="total">Total:</label>
+                    <input type="text" id="total" name="total" disabled>
+                </div>
+            </article>
+            <hr>
+            <article>
+                <div>
+                    <label for="three">Three Of A Kind (Enter One Dice Face):</label>
+                    <input type="text" id="three" name="three">
+                </div>
+                <div>
+                    <label for="four">Four Of A Kind (Enter One Dice Face):</label>
+                    <input type="text" id="four" name="four">
+                </div>
+                <div>
+                    <label for="house">Full House (Score 30):</label>
+                    <input type="text" id="house" name="house">
+                </div>
+                <div>
+                    <label for="small">Sm Straight (Score 30):</label>
+                    <input type="text" id="small" name="small">
+                </div>
+                <div>
+                    <label for="large">Lg Straight (Score 40):</label>
+                    <input type="text" id="large" name="large">
+                </div>
+                <div>
+                    <label for="yahtzee">Yahtzee (Score 50):</label>
+                    <input type="text" id="yahtzee" name="yahtzee">
+                </div>
+                <div>
+                    <label for="chance">Chance (Add All Dice):</label>
+                    <input type="text" id="chance" name="chance">
+                </div>
+                <div>
+                    <label for="more">Yahtzee Bonus (How Many):</label>
+                    <input type="text" id="more" name="more">
+                </div>
+                <div>
+                    <input type="button" id="addNumbers" value="Add Numbers">
+                </div>
+                <div>
+                    <label for="lower">Lower Sum:</label>
+                    <input type="text" id="lower" name="lower" disabled>
+                </div>
+            </article>
+            <hr>
+            <article>
+                <div>
+                    <label for="grand">Grand Total:</label>
+                    <input type="text" id="grand" name="grand" disabled>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        &copy;<span id="year"></span> | Controlling Your Code | Lesson 5
+    </footer>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/task6.js"></script>
+</body>
+
+</html>
