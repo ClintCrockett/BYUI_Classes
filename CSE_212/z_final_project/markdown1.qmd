@@ -1,0 +1,97 @@
+---
+title: "Linked Lists"
+author: "Jayton Crockett"
+format:
+  html:
+    self-contained: true
+    page-layout: full
+    title-block-banner: true
+    toc: true
+    toc-depth: 3
+    toc-location: body
+    number-sections: false
+    html-math-method: katex
+    code-fold: true
+    code-summary: "Show the code"
+    code-overflow: wrap
+    code-copy: hover
+    code-tools:
+        source: false
+        toggle: true
+        caption: See code
+    
+---
+
+Definition:_
+_A linked list is a linear data structure in which elements are stored as nodes. Each node contains data and a reference (or link) to the next node in the list. The last node in the list points to null, indicating the end of the list._
+
+_Main Features:_
+
+_Consists of nodes connected through links
+Dynamic size: Nodes can be added or removed easily
+No fixed memory allocation: Nodes can be scattered in memory
+Basic Operations:_
+
+_Insertion:_
+
+_Insert at the beginning: Create a new node, set its data, and point it to the current head node. Update the head to the new node.
+Insert at the end: Create a new node, set its data, and make it the last node by updating the next reference of the current last node.
+Insert at a specific position: Traverse the list to the desired position, create a new node, adjust the links to include the new node.
+Deletion:_
+
+_Delete at the beginning: Update the head to the next node, and deallocate the memory of the previous head.
+Delete at the end: Traverse the list to the second-to-last node, update its next reference to null, and deallocate the memory of the last node.
+Delete at a specific position: Traverse the list to the desired position, update the links to bypass the node to be deleted, and deallocate its memory.
+Searching:_
+
+_Traverse the list from the head, comparing the data of each node with the target value until a match is found or the end of the list is reached.
+Displaying:_
+
+_Start from the head and traverse the list, printing the data of each node._
+
+
+### Linked List Example
+
+```python
+# Node class represents each node in the linked list
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
+# LinkedList class represents the linked list itself
+class LinkedList:
+    def __init__(self):
+        self.head = None
+
+    def append(self, data):
+        new_node = Node(data)
+
+        if self.head is None:
+            self.head = new_node
+        else:
+            current = self.head
+            while current.next:
+                current = current.next
+            current.next = new_node
+
+    def display(self):
+        if self.head is None:
+            print("Linked list is empty")
+        else:
+            current = self.head
+            while current:
+                print(current.data, end=" -> ")
+                current = current.next
+            print("None")
+
+# Creating a linked list and adding elements
+my_list = LinkedList()
+my_list.append(10)
+my_list.append(20)
+my_list.append(30)
+my_list.append(40)
+
+# Displaying the linked list
+my_list.display()
+```
