@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+@font-face{
+    font-family: Nav;
+    src: url(Raleway-light.ttf) format('truetype'),
+    url(Raleway-light.ttf) format('woff'),
+    url(Raleway-light.ttf) format('woff2');
+}
+@font-face{
+    font-family: Other;
+    src: url(Raleway-SemiBold.ttf) format('truetype'),
+    url(Raleway-SemiBold.ttf) format('woff'),
+    url(Raleway-SemiBold.ttf) format('woff2');
+}
+html{
+    background-color: rgb(248, 248, 248);
+    padding-left: 10em;
+    padding-right: 10em;
+}
+
+/* Nav bar */
+div.row-1-1{
+    background-color: aqua;
+    border-radius: 105px;
+    margin-top: .5%;
+    font-family: Nav;
+}
+div.row-1-1 ul{
+    display: -webkit-flex-box;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-flex: 1 1 130px;
+      flex: 1 1 130px;
+}
+div.row-1-1 ul li{
+    display: block;
+    padding: 1%;
+    margin-right: auto;
+    margin-left: auto;
+}
+div.row-1-1 a{
+    color: black;
+}
+div.row-1-1 a:hover, div.row-1-1 a:active{
+    text-shadow: 10px 0px 20px rgb(26, 0, 121),
+                -10px 0px 20px rgb(26, 0, 121); 
+    border-radius: 105px;
+}
+
+div#section{
+    letter-spacing: 2px;
+}
+div#p{
+    font-size: 17px;
+    color: rgb(5, 238, 255);
+    width: fit-content;
+    background-color: rgb(78, 78, 78);
+    line-height: 1.5em;
+}
+div.col-1-1{
+    border-radius: 105px 0px 0px 105px ;
+    padding: 5% 1% 5% 5%;
+}
+div.col-1-2{
+    border-radius: 0px 105px 105px 0px ;
+    padding: 5% 5% 5% 1%;
+}
+
+div.row-1-3{
+    display: -webkit-flex-box;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    padding-left: 40px;
+    background-color: rgba(0, 0, 0, 0.884);
+    border-radius: 55px;
+    box-shadow: 10px 0px 10px gray,
+                -10px 0px 10px gray;
+    font-family: Other;
+}
+div.row-1-2{
+    padding-top: 1.5%;
+    padding-bottom: 1.7%;
+}
+h1{
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 105px;
+    background-color: gray;
+    width: 20%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-left: auto;
+    margin-right: auto;
+}
+div#p>a{
+    color: rgb(5, 238, 255);
+    text-decoration: none;
+}
+div#p>a:hover, div#p>a:active{
+    background-color: gray;
+}
+img{
+    margin-left: auto;
+    margin-right: auto;
+}

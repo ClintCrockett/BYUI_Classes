@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+@font-face{
+    font-family: Nav;
+    src: url(Raleway-light.ttf) format('truetype'),
+    url(Raleway-light.ttf) format('woff'),
+    url(Raleway-light.ttf) format('woff2');
+}
+@font-face{
+    font-family: Other;
+    src: url(Raleway-SemiBold.ttf) format('truetype'),
+    url(Raleway-SemiBold.ttf) format('woff'),
+    url(Raleway-SemiBold.ttf) format('woff2');
+}
+html{
+    background-color: rgb(248, 248, 248);
+    padding-left: 10em;
+    padding-right: 10em;
+}
+
+/* Nav bar */
+div.row-1-1{
+    background-color: aqua;
+    border-radius: 105px;
+    margin-top: .5%;
+    font-family: Nav;
+}
+div.row-1-1 ul{
+    display: -webkit-flex-box;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-flex: 1 1 130px;
+      flex: 1 1 130px;
+}
+div.row-1-1 ul li{
+    display: block;
+    padding: 1%;
+    margin-right: auto;
+    margin-left: auto;
+}
+div.row-1-1 a{
+    color: black;
+}
+div.row-1-1 a:hover, div.row-1-1 a:active{
+    text-shadow: 10px 0px 20px rgb(26, 0, 121),
+                -10px 0px 20px rgb(26, 0, 121); 
+    border-radius: 105px;
+}
+
+h1{
+    font-size: 40px;
+    padding: 5%;
+    color: rgb(5, 238, 255);
+    width: fit-content;
+    background-color: rgb(78, 78, 78);
+    border-radius: 105px;
+    line-height: 1.5em;
+}
+a{
+    text-decoration: none;
+    color: rgb(5, 238, 255);
+}
+h1>a:hover, p>a:active{
+    background-color: gray;
+    border-radius: 55px;
+}
+div.row-1-2{
+    display: -webkit-flex-box;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    margin-top: 13px;
+    padding-top: 12%;
+    padding-bottom: 15%;
+    padding-left: 40px;
+    background-color: rgba(0, 0, 0, 0.884);
+    border-radius: 55px;
+    box-shadow: 10px 0px 10px gray,
+                -10px 0px 10px gray;
+    font-family: Other;
+    letter-spacing: 2px;
+}
+img{
+    float: right;
+    padding-left: 40px;
+    margin-right: auto;
+    text-shadow: white;
+}
+p{
+    padding-left: 60px;
+}
+img#logo:hover{
+    transition: 1.5s;
+    transform: rotate(360deg);
+}
+img#logo{
+    transition: 1.5s;
+    transform: rotate(0deg);
+}
